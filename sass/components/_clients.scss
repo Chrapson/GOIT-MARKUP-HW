@@ -1,0 +1,30 @@
+.clients {
+  &__header {
+    @extend %headerH2;
+  }
+  &__icon-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  &__icon-list-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17.71px 32px 14.25px 32px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    text-decoration: none;
+    fill: #afb1b8;
+    cursor: pointer;
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon-list-element:hover,
+  &__icon-list-element:focus {
+    border-color: $light-blue-color;
+    fill: $light-blue-color;
+  }
+}

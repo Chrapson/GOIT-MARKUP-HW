@@ -1,0 +1,35 @@
+.solutions {
+  padding-bottom: 0;
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $alt-white;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+
+    &-header {
+      color: $text-color;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    &-element {
+      color: $secondary-color;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container.container {
+  padding: 60px 0 60px;
+  display: flex;
+  align-items: baseline;
+}
+.footer {
+  background: #2f303a;
+
+  &__contact-list {
+    margin-top: 20px;
+
+    &-map {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $white;
+      text-decoration: none;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $light-blue-color;
+      }
+    }
+  }
+  &__contact-list {
+    & .footer__contact-list-element {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__socials {
+    margin-left: 70px;
+  }
+  &__socials-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  &__socials-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    &-element {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      border-radius: 50%;
+      fill: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &-element:hover {
+      background-color: $light-blue-color;
+    }
+  }
+}
+
+.white-logo {
+  color: $white;
+}
+.address li {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.footer__contact-list-element {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondary-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $light-blue-color;
+  }
+}
+
+.newsletter {
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    &-email {
+      width: 358px;
+      height: 50px;
+      padding-left: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+    }
+  }
+}
+.submit-btn {
+  width: 200px;
+  height: 50px;
+  color: $white;
+  background: $light-blue-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+}
+.newsletter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}

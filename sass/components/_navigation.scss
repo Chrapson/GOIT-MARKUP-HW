@@ -1,0 +1,103 @@
+.body-header {
+  background-color: $white;
+  border-bottom: 1px solid #ececec;
+}
+
+.body-header {
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.blue-logo {
+  color: $light-blue-color;
+}
+.black-logo {
+  color: $text-color;
+}
+.menu-nav,
+.menu-nav__list,
+.menu-nav__contact-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-nav {
+  &__list {
+    margin-left: 93px;
+    &-link {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: $text-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-link--active {
+      color: $light-blue-color;
+      position: relative;
+    }
+    &-link--active:after {
+      content: "";
+      position: absolute;
+      border-bottom: 4px solid $light-blue-color;
+      border-radius: 2px;
+      display: block;
+      width: 100%;
+      padding-bottom: 28px;
+    }
+    &-item:nth-child(2) {
+      margin-right: 46px;
+      margin-left: 46px;
+    }
+
+    &-link:hover,
+    &-link:focus,
+    &-link:after {
+      color: $light-blue-color;
+    }
+  }
+  &__contact-list {
+    padding: 32px 0;
+    gap: 50px;
+    &-element {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $secondary-color;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $light-blue-color;
+      }
+    }
+
+    &-icon {
+      fill: currentColor;
+      margin-right: 10px;
+    }
+  }
+}
+
