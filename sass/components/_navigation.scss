@@ -1,15 +1,11 @@
-.body-header {
+.header__container {
   background-color: $white;
   border-bottom: 1px solid #ececec;
-  padding: 15px 0 15px 0;
+  padding: 16px 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.body-header {
-  & > .container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 .logo {
   display: flex;
   align-items: center;
@@ -74,8 +70,9 @@
     }
   }
   &__contact-list {
-    padding: 32px 0;
-    gap: 50px;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
     &-element {
       font-style: normal;
       font-weight: 500;
@@ -99,5 +96,10 @@
       fill: currentColor;
       margin-right: 10px;
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__container {
+    padding: 26px 15px;
   }
 }
