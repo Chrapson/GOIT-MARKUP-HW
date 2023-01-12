@@ -1,6 +1,5 @@
 .solutions {
-  padding-bottom: 0;
-  max-width: $mobileWidth;
+  padding-bottom: 60px;
   min-width: $mobileWidth;
   &__icon {
     display: flex;
@@ -19,6 +18,8 @@
     gap: 30px;
 
     &-header {
+      display: flex;
+      justify-content: center;
       color: $text-color;
       font-weight: 700;
       font-size: 14px;

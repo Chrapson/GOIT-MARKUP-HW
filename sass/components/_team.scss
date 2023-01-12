@@ -16,6 +16,7 @@
   &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
 
   &__list-worker {
@@ -28,9 +29,7 @@
     margin: 30px 0 10px;
     text-align: center;
   }
-  &img {
-    display: block;
-  }
+
   &__list-description {
     font-size: 16px;
     line-height: 1.18;
@@ -45,11 +44,11 @@
   &__icon-list {
     display: flex;
     gap: 10px;
-    justify-content: space-around;
-    padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
-
+    justify-content: center;
+    // padding-bottom: 30px;
+    // padding-left: 32px;
+    // padding-right: 32px;
+    padding-bottom: 24px;
     &-element {
       display: flex;
       align-items: center;
