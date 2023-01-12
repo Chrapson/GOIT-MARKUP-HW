@@ -1,3 +1,9 @@
+@media screen and (min-width: 480px) {
+  .clients__icon-list-element {
+    padding: 16px 32px;
+  }
+}
+
 .clients {
   &__header {
     @extend %headerH2;
@@ -17,7 +23,7 @@
     justify-content: center;
     flex-basis: calc((100% - 30px) / 2);
     // padding: 17.71px 32px 14.25px 32px;
-    padding: 16px 32px;
+    padding: 16px 20px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     text-decoration: none;
