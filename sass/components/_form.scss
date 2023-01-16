@@ -12,7 +12,6 @@
 }
 
 .modal {
-  // position: absolute;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -54,9 +53,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 40px;
   &__header {
-    // padding: 40px 40px 12px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -69,8 +68,6 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    // padding-left: 40px;
-    // padding-right: 40px;
     margin-bottom: 10px;
     font-style: normal;
     font-weight: 400;
@@ -161,7 +158,7 @@
   position: absolute;
   cursor: pointer;
   top: 25%;
-  left: 9%;
+  left: 6%;
   transform: translateX(-9%);
   transform: translatey(-50%);
   width: 16px;
