@@ -26,7 +26,7 @@
 .menu-nav__list,
 .menu-nav__contact-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -34,6 +34,7 @@
   &__list {
     margin-left: 93px;
     &-link {
+      position: relative;
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
@@ -52,11 +53,13 @@
     &-link--active:after {
       content: "";
       position: absolute;
+      top: 300%;
+      left: 0;
       border-bottom: 4px solid $light-blue-color;
       border-radius: 2px;
       display: block;
       width: 100%;
-      padding-bottom: 28px;
+      // padding-bottom: 28px;
     }
     &-item:nth-child(2) {
       margin-right: 46px;
@@ -101,5 +104,17 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__container {
     padding: 26px 15px;
+  }
+}
+@media screen and (min-width: $desktopWidth) {
+  .header__container {
+    justify-content: space-around;
+  }
+  .menu-nav__contact-list {
+    flex-direction: row;
+    align-items: center;
+  }
+  .menu-nav__list-link--active:after {
+    top: 215%;
   }
 }

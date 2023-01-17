@@ -1,9 +1,3 @@
-@media screen and (max-width: 768px) {
-  .our-job {
-    display: none;
-  }
-}
-
 .our-job-description-box {
   position: relative;
   display: flex;
@@ -25,7 +19,7 @@
     background: rgba(47, 48, 58, 0.8);
     color: $white;
     padding: 27px 0;
-    width: 100vh;
+    width: 100%;
   }
 }
 .our-job {
@@ -37,10 +31,16 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 50px;
+    gap: 30px;
   }
   &__header {
     @extend %headerH2-desktop;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .our-job {
+    display: none;
   }
 }

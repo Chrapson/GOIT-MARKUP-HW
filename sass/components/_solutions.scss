@@ -1,10 +1,8 @@
 .solutions {
-  padding-bottom: 60px;
   &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    // padding: 25px 100px;
     background-color: $alt-white;
     border-radius: 4px;
     height: 120px;
@@ -40,12 +38,28 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .solutions__list {
     flex-direction: row;
-    justify-content: space-between;
+
     &-item {
       max-width: 345px;
     }
     &-header {
       display: block;
+    }
+  }
+}
+@media screen and (min-width: $desktopWidth) {
+  .solutions {
+    padding-bottom: 0;
+
+    &__list {
+      flex-wrap: nowrap;
+      justify-content: center;
+      &-item {
+        max-width: 270px;
+      }
+      &-header {
+        display: block;
+      }
     }
   }
 }

@@ -1,12 +1,11 @@
 .hero-bg {
   background: #2f303a;
   &__img {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/hero.jpg");
-    // width: 1600px;
+    // background-image: linear-gradient(
+    //     rgba(47, 48, 58, 0.4),
+    //     rgba(47, 48, 58, 0.4)
+    //   ),
+    //   url("../images/hero@2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
@@ -70,13 +69,14 @@
           rgba(47, 48, 58, 0.4)
         ),
         url("../images/hero768.jpg");
+      min-height: 400px;
     }
     &__title {
       font-size: 26px;
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktopWidth) {
   .hero-bg {
     &__img {
       background-image: linear-gradient(
@@ -84,10 +84,24 @@
           rgba(47, 48, 58, 0.4)
         ),
         url("../images/hero1200.jpg");
+      min-height: 600px;
     }
     &__title {
       font-size: 44px;
       line-height: 1.36;
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-bg {
+    &__img {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero@2x.jpg");
     }
   }
 }

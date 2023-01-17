@@ -1,9 +1,3 @@
-@media screen and (min-width: 480px) {
-  .clients__icon-list-element {
-    padding: 16px 32px;
-  }
-}
-
 .clients {
   &__header {
     @extend %headerH2;
@@ -12,8 +6,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    // justify-content: space-around;
-    // align-items: center;
     gap: 30px;
     margin-top: 50px;
   }
@@ -22,8 +14,7 @@
     align-items: center;
     justify-content: center;
     flex-basis: calc((100% - 30px) / 2);
-    // padding: 17.71px 32px 14.25px 32px;
-    padding: 16px 20px;
+    padding: 16px 32px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     text-decoration: none;
@@ -37,5 +28,32 @@
   &__icon-list-element:focus {
     border-color: $light-blue-color;
     fill: $light-blue-color;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__icon-list {
+    &-element {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+}
+@media screen and (min-width: $desktopWidth) {
+  .clients {
+    &__header {
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--text-color);
+    }
+    &__icon-list {
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: baseline;
+      &-element {
+        flex-basis: auto;
+      }
+    }
   }
 }
