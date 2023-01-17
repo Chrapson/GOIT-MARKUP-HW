@@ -76,7 +76,7 @@
     }
   }
 }
-@media screen and (min-width: $desktopWidth) {
+@media screen and (min-width: 1200px) {
   .hero-bg {
     &__img {
       background-image: linear-gradient(

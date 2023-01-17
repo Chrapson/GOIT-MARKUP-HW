@@ -191,7 +191,7 @@
     transform: translatey(-6%);
   }
 }
-@media screen and (min-width: $desktopWidth) {
+@media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
   }
