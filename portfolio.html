@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,17 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
     <title>Porfolio</title>
   </head>
   <body>
     <header class="body-header">
-      <div class="container">
+      <div class="header__container container">
         <nav class="menu-nav">
           <a class="blue-logo logo" href="index.html"
             >Web<span class="black-logo logo">Studio</span></a
           >
-          <ul class="menu-nav__list list list">
+          <ul class="menu-nav__list list">
             <li class="menu-nav__list-item">
               <a class="menu-nav__list-link" href="index.html">Agencja</a>
             </li>
@@ -62,6 +60,17 @@
             >
           </li>
         </ul>
+
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-hamburger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -98,16 +107,20 @@
       </section>
       <div class="container">
         <section class="portfolio-job section">
-          <ul class="portfolio-job-list list">
-            <li class="portfolio-job-list__item">
+          <ul class="portfolio-job__list list">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/technocrack.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/technocrack@1200.jpg"
+                    srcset="
+                      images/technocrack@1200.jpg 270w,
+                      images/technocrack@768.jpg  354w,
+                      images/technocrack@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="strona internetowa"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
@@ -119,22 +132,26 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">Technocrack</h3>
-                  <p class="portfolio-job-list__description">
+                  <h3 class="portfolio-job__list-header">Technocrack</h3>
+                  <p class="portfolio-job__list-description">
                     Strona internetowa
                   </p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-job-list__item">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/nba.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/nba@1200.jpg"
+                    srcset="
+                      images/nba@1200.jpg 270w,
+                      images/nba@768.jpg  354w,
+                      images/nba@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="grafika koszykarzy"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
@@ -146,22 +163,26 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">
+                  <h3 class="portfolio-job__list-header">
                     Grafika New Orlean vs Golden Star
                   </h3>
-                  <p class="portfolio-job-list__description">Dizajn</p>
+                  <p class="portfolio-job__list-description">Dizajn</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-job-list__item">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/seafood.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/seafood@1200.jpg"
+                    srcset="
+                      images/seafood@1200.jpg 270w,
+                      images/seafood@768.jpg  354w,
+                      images/seafood@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="logo restauracji"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
@@ -173,22 +194,26 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">
+                  <h3 class="portfolio-job__list-header">
                     Restauracja Seafood
                   </h3>
-                  <p class="portfolio-job-list__description">Aplikacja</p>
+                  <p class="portfolio-job__list-description">Aplikacja</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-job-list__item">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/headphones.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/headphones@1200.jpg"
+                    srcset="
+                      images/headphones@1200.jpg 270w,
+                      images/headphones@768.jpg  354w,
+                      images/headphones@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="zdjęcie słuchawek"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
@@ -200,20 +225,24 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">Projekt Prime</h3>
-                  <p class="portfolio-job-list__description">Marketing</p>
+                  <h3 class="portfolio-job__list-header">Projekt Prime</h3>
+                  <p class="portfolio-job__list-description">Marketing</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-job-list__item">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/boxes.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/boxes@1200.jpg"
+                    srcset="
+                      images/boxes@1200.jpg 270w,
+                      images/boxes@768.jpg  354w,
+                      images/boxes@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="logo aplikacji z pudełkami"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
@@ -225,20 +254,24 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">Projekt Boxes</h3>
-                  <p class="portfolio-job-list__description">Aplikacja</p>
+                  <h3 class="portfolio-job__list-header">Projekt Boxes</h3>
+                  <p class="portfolio-job__list-description">Aplikacja</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-job-list__item">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/website.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/website@1200.jpg"
+                    srcset="
+                      images/website@1200.jpg 270w,
+                      images/website@768.jpg  354w,
+                      images/website@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="komputer ze stroną internetową"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
@@ -250,25 +283,30 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">
+                  <h3 class="portfolio-job__list-header">
                     Inspiration has no Borders
                   </h3>
-                  <p class="portfolio-job-list__description">
+                  <p class="portfolio-job__list-description">
                     Strona internetowa
                   </p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-job-list__item">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/mag.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/mag@1200.jpg"
+                    srcset="
+                      images/mag@1200.jpg 270w,
+                      images/mag@768.jpg  354w,
+                      images/mag@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="zdjęcie gazety"
-                    width="370"
-                    height="294"
                   />
+
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
                       Technocrack jest popularną platformą wykorzystywaną do
@@ -279,22 +317,26 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">
+                  <h3 class="portfolio-job__list-header">
                     Magazyn Limited Edition
                   </h3>
-                  <p class="portfolio-job-list__description">Dizajn</p>
+                  <p class="portfolio-job__list-description">Dizajn</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-job-list__item">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/label.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/label@1200.jpg"
+                    srcset="
+                      images/label@1200.jpg 270w,
+                      images/label@768.jpg  354w,
+                      images/label@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="zdjęcie etykiety"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
@@ -306,20 +348,24 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">Projekt LAB</h3>
-                  <p class="portfolio-job-list__description">Marketing</p>
+                  <h3 class="portfolio-job__list-header">Projekt LAB</h3>
+                  <p class="portfolio-job__list-description">Marketing</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="portfolio-job-list__item">
+            <li class="portfolio-job__list-item">
               <figure>
                 <div class="portfolio-job-overlay-box">
                   <img
-                    class="portfolio-job-list__img"
-                    src="images/app.jpg"
+                    class="portfolio-job__list-img"
+                    src="images/app@1200.jpg"
+                    srcset="
+                      images/app@1200.jpg 270w,
+                      images/app@768.jpg  354w,
+                      images/app@480.jpg  450w
+                    "
+                    sizes="(min-width:1200px) 270px, (min-width:768px)354px, 450px, 100vw"
                     alt="aplikacja na laptopie"
-                    width="370"
-                    height="294"
                   />
                   <div class="portfolio-job-overlay">
                     <p class="portfolio-job-overlay-description">
@@ -331,8 +377,8 @@
                   </div>
                 </div>
                 <figcaption class="portfolio-job-img-description">
-                  <h3 class="portfolio-job-list__header">Growing Business</h3>
-                  <p class="portfolio-job-list__description">Aplikacja</p>
+                  <h3 class="portfolio-job__list-header">Growing Business</h3>
+                  <p class="portfolio-job__list-description">Aplikacja</p>
                 </figcaption>
               </figure>
             </li>
@@ -342,7 +388,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer__contact">
           <a href="index.html" class="blue-logo logo"
             >Web<span class="white-logo logo">Studio</span></a
           >
@@ -417,6 +463,79 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="mobile-menu__icon mobile-menu__icon--close"
+          width="40"
+          height="40"
+        >
+          <use href="images/icons.svg#icon-mobile-menu-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__container">
+        <div>
+          <ul class="list mobile-menu__list">
+            <li class="mobile-menu__list-item">
+              <a
+                class="mobile-menu__list-link mobile-menu__list-link--active"
+                href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="mobile-menu__list-item">
+              <a class="mobile-menu__list-link" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__list-item">
+              <a class="mobile-menu__list-link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mobile-menu__container-contact-list list">
+            <li>
+              <a
+                class="mobile-menu__container-contact-list-phone"
+                href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li>
+              <a
+                class="mobile-menu__container-contact-list-mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__container-social-list list">
+            <li class="mobile-menu__container-social-list-item">
+              <a class="mobile-menu__container-social-list-link" href="#"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__container-social-list-item">
+              <a class="mobile-menu__container-social-list-link" href="#"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__container-social-list-item">
+              <a class="mobile-menu__container-social-list-link" href="#"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__container-social-list-item">
+              <a class="mobile-menu__container-social-list-link" href="#"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
