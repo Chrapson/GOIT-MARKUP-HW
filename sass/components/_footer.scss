@@ -116,12 +116,15 @@
 }
 
 .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__form {
     display: flex;
     align-items: center;
     // justify-content: center;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
 
     &-email {
       width: calc(100vw - 30px);
@@ -182,7 +185,11 @@
       }
     }
   }
+  .footer__socials {
+    display: block;
+  }
   .newsletter {
+    display: block;
     &__form {
       flex-direction: row;
       &-email {

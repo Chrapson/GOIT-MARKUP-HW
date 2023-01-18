@@ -22,15 +22,14 @@
 .black-logo {
   color: $text-color;
 }
-.menu-nav,
+
 .menu-nav__list,
 .menu-nav__contact-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .menu-nav {
+  display: flex;
   &__list {
     margin-left: 93px;
     &-link {
@@ -101,6 +100,16 @@
     }
   }
 }
+@media screen and (min-width: 768px) {
+  .menu-nav,
+  .menu-nav__list,
+  .menu-nav__contact-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__container {
     padding: 26px 15px;
