@@ -18,7 +18,8 @@
     <title>Porfolio</title>
   </head>
   <body>
-    <header class="body-header">
+    <!-- NAV BAR -->
+    <header class="body-header container">
       <div class="header__container container">
         <nav class="menu-nav">
           <a class="blue-logo logo" href="index.html"
@@ -60,7 +61,7 @@
             >
           </li>
         </ul>
-
+        <!-- HAMBURGER MENU BUTTON -->
         <button
           type="button"
           class="menu-toggle js-open-menu"
@@ -71,9 +72,13 @@
             <use href="./images/icons.svg#icon-hamburger-menu"></use>
           </svg>
         </button>
+        <!-- END HAMBURGER -->
+        <!-- END NAV -->
       </div>
     </header>
     <main>
+      <div class="nav-bar-underline"></div>
+      <!-- FILTER LIST -->
       <section class="portfolio-nav section">
         <div class="container">
           <ul class="portfolio-nav__list list">
@@ -105,6 +110,8 @@
           </ul>
         </div>
       </section>
+      <!-- END FILTER LIST-->
+      <!-- PORTFOLIO -->
       <div class="container">
         <section class="portfolio-job section">
           <ul class="portfolio-job__list list">
@@ -385,7 +392,9 @@
           </ul>
         </section>
       </div>
+      <!-- END PORTFOLIO -->
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer__contact">
@@ -463,6 +472,8 @@
         </div>
       </div>
     </footer>
+    <!-- END FOOTER -->
+    <!-- MOBILE MENU -->
     <div class="mobile-menu js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
@@ -535,6 +546,7 @@
         </div>
       </div>
     </div>
+    <!-- END MOBILE MNEU -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

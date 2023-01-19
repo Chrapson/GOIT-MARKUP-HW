@@ -1,6 +1,9 @@
+.nav-bar-underline {
+  border-top: 1px solid #ececec;
+}
 .header__container {
   background-color: $white;
-  border-bottom: 1px solid #ececec;
+  // border-bottom: 1px solid #ececec;
   padding: 16px 15px;
   display: flex;
   justify-content: space-between;
